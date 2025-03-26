@@ -60,7 +60,8 @@ Bu işlemlerin hepsini gerçekleştiriyor.
 <br />
 **compile işlemi:**
 perl calculator.pl
-  
+  <br />
+  <br />
 
  Error Handling in Perl
 2.  **die**  "Geçersiz karakterler"
