@@ -9,6 +9,7 @@ Interpreter implementation for a simple calculator. 1. Rust 2. ADA 3. Perl 4. Sc
 2- İşlem önceliği: Üs > Çarpma/Bölme > Toplama/Çıkarma
 
 3- Değişken atama: x = 5 + 3 gibi atamaları destekler. Değişkenler bir HashMap'te saklanır.
+<br />
 **compile işlemi:**
 rustc calculator.rs && ./calculator
 
