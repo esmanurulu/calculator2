@@ -10,6 +10,7 @@ Interpreter implementation for a simple calculator. 1. Rust 2. ADA 3. Perl 4. Sc
 
 3- Değişken atama: x = 5 + 3 gibi atamaları destekler. Değişkenler bir HashMap'te saklanır.
 <br />
+<br />
 **compile işlemi:**
 rustc calculator.rs && ./calculator
 
@@ -53,7 +54,8 @@ Bu işlemlerin hepsini gerçekleştiriyor.
 1. Üs Alma: ^ veya ** ile
  2. Değişken Atama: x = 5 + 3
  3. İşlem Önceliği: Parantez > Üs > Çarpma/Bölme > Toplama/Çıkarma
-
+<br />
+<br />
 **compile işlemi:**
 perl calculator.pl
   
@@ -80,28 +82,21 @@ mit-scheme // komutu çalıştırdım.
   ..
 1 ]=> (calculator '((1 + 2) * 4))
 
-  
-
 ;Value: 12
 
 1 ]=> (calculator '(10 / (5 + 2)))
 
-  
-
 ;Value: 10/7
 
-  
-
-  
-
 **
+
 
 ## -> PROLOG
 
 **
 **Error handling in prolog:**
 throw(zero_division)).
- 
+ <br />
  
 **compile için:**
 
