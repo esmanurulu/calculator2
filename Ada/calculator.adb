@@ -23,7 +23,7 @@ procedure calculator_implementation is
 		begin 
 			New_Line;
 			
-			-- Menu with operation choices
+			
       Put_Line("0. Exit Program");
 			Put_Line("1. Addition of 2 Numbers ");
 			Put_Line("2. Subtraction of 2 Numbers");
@@ -110,11 +110,11 @@ procedure calculator_implementation is
 					Put("The square value of the entered number is: " & SquareValue'img);
 					
 						
-			-- Exit Program		
+			
 				when 0 =>
 					Put_Line(" ");
 					
-			-- Validate Menu Choice	
+			
 				when others =>
 					Put("invalid input.");
 					
@@ -124,7 +124,7 @@ procedure calculator_implementation is
 				
 				
 				
-end calculator_implementation; --end procedure
+end calculator_implementation;
 			
 			
 			
