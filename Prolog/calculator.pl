@@ -1,7 +1,7 @@
-/* Düzeltilmiş Prolog Hesap Makinesi */
 
-:- encoding(utf8). % Türkçe karakter desteği
-:- prompt(_, '').  % "|:" promptunu kaldır
+
+:- encoding(utf8). 
+:- prompt(_, '').  % 
 
 main :-
     write('=== PROLOG HESAP MAKİNESİ ==='), nl,
