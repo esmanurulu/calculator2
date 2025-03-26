@@ -23,7 +23,6 @@ while (1) {
         my ($var, $expr) = split /\s*=\s*/, $input, 2;
         $var =~ s/^\s+|\s+$//g;
         
-        # İfadeyi değerlendir
         my $value = eval_expr($expr);
         if ($@) {
             print "Hata: $@\n";
@@ -44,16 +43,14 @@ while (1) {
 
 sub eval_expr {
     my ($expr) = @_;
-    $expr =~ s/\s+//g;  # Boşlukları temizle
-    $expr =~ s/\^/**/g; # ^ operatörünü **'ya çevir
+    $expr =~ s/\s+//g;  
+    $expr =~ s/\^/**/g; 
     
-    # Değişkenleri değerleriyle değiştir
+  
     $expr =~ s/([a-zA-Z_]\w*)/$variables{$1} || die "Tanımsız değişken: $1"/ge;
     
-    # Güvenlik ve syntax kontrolü
+
     die "Geçersiz karakterler" unless $expr =~ /^[-+*\/\d().]+$/;
-    
-    # Sıfıra bölme kontrolü
     die "Sıfıra bölme hatası" if $expr =~ /\/0/;
     
     my $result = eval $expr;
