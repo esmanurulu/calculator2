@@ -1,8 +1,10 @@
+
 # calculator2 BIL395 - hw2
+**Esmanur Ulu 231101024**
 Interpreter implementation for a simple calculator.
 1. Rust 2. ADA 3. Perl 4. Scheme 5. Prolog
 <br />
-**Esmanur Ulu 231101024**
+
 
 ## -**> RUST:**
 
@@ -11,8 +13,7 @@ Interpreter implementation for a simple calculator.
 2- İşlem önceliği: Üs > Çarpma/Bölme > Toplama/Çıkarma
 
 3- Değişken atama: x = 5 + 3 gibi atamaları destekler. Değişkenler bir HashMap'te saklanır.
-<br />
-<br />
+
 **compile işlemi:**
 rustc calculator.rs && ./calculator
 
@@ -23,8 +24,6 @@ panic!(“geçersiz karakter: {}", self.input[self.pos])
 panic!("bilinmeyen işlem: {:?}", self.current_token);
 
 let  val  =  *vars.get(name).expect("bilinmeyen değişken");
-
-  
 
   
 
@@ -48,7 +47,6 @@ Bu işlemlerin hepsini gerçekleştiriyor.
 
   
 
-**
 
 ## -> PERL
 
@@ -69,8 +67,7 @@ perl calculator.pl
 4.  **die**  "Tanımsız değişken: $1"
    
      
-    
-  **
+
 
 ## -> SCHEME
 
@@ -91,14 +88,14 @@ mit-scheme // komutu çalıştırdım.
 
 ;Value: 10/7
 
-**
+
 
 
 ## -> PROLOG
 
 **
 **Error handling in prolog:**
-throw(zero_division)).
+throw(zero_division).
  <br />
  
 **compile için:**
@@ -130,8 +127,6 @@ For online help and background, visit https://www.swi-prolog.org
 
 For built-in help, use ?- help(Topic). or ?- apropos(Word).
 
-  
 
-?-
-
-Bu şekilde swipl açılıyor. Ctrl + z ile sonlandırıyorum programı.
+Bu şekilde swipl açılıyor. 
+Ctrl + z ile sonlandırıyorum programı.
